@@ -15,7 +15,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.post('/save', (req: Request, res: Response) => {
-    res.send({ message: 'ok', body: req.body });
+    res.send({ success: true, body: req.body });
 });
 
 // Error handling middleware
